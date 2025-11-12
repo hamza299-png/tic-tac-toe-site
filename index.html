@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Play Tic Tac Toe online for free! Challenge a friend or play against smart AI. Classic strategy game with modern design.">
+    <title>Play Tic Tac Toe Online – Free Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Theme Toggle -->
+    <button class="theme-toggle" aria-label="Toggle dark mode" id="themeToggle">🌙</button>
+
+    <!-- Header -->
+    <header>
+        <h1>Play Tic Tac Toe Online – Free Game</h1>
+        <p class="description">
+            Challenge a friend in local multiplayer or test your skills against our smart AI. 
+            Classic strategy game with a modern twist. Simple, fun, and completely free!
+        </p>
+    </header>
+
+    <!-- Main Game Area -->
+    <main>
+        <div class="game-container">
+            <!-- Mode Selector -->
+            <div class="mode-selector">
+                <button class="mode-btn active" data-mode="pvp">Player vs Player</button>
+                <button class="mode-btn" data-mode="ai">Player vs AI</button>
+            </div>
+
+            <!-- Scoreboard -->
+            <div class="scoreboard">
+                <div class="score-item">
+                    <div class="score-label">Player X</div>
+                    <div class="score-value" id="scoreX">0</div>
+                </div>
+                <div class="score-item">
+                    <div class="score-label">Draws</div>
+                    <div class="score-value" id="scoreDraw">0</div>
+                </div>
+                <div class="score-item">
+                    <div class="score-label" id="player2Label">Player O</div>
+                    <div class="score-value" id="scoreO">0</div>
+                </div>
+            </div>
+
+            <!-- Game Status -->
+            <div class="game-status" id="gameStatus">Player X's Turn</div>
+
+            <!-- Game Board -->
+            <div class="board" id="board">
+                <div class="cell" data-index="0" tabindex="0"></div>
+                <div class="cell" data-index="1" tabindex="0"></div>
+                <div class="cell" data-index="2" tabindex="0"></div>
+                <div class="cell" data-index="3" tabindex="0"></div>
+                <div class="cell" data-index="4" tabindex="0"></div>
+                <div class="cell" data-index="5" tabindex="0"></div>
+                <div class="cell" data-index="6" tabindex="0"></div>
+                <div class="cell" data-index="7" tabindex="0"></div>
+                <div class="cell" data-index="8" tabindex="0"></div>
+            </div>
+
+            <!-- Reset Button -->
+            <button class="reset-btn" id="resetBtn">Play Again</button>
+        </div>
+
+        <!-- Ad Space Placeholder -->
+        <div id="ad-space">
+            <p>Advertisement Space</p>
+            <p style="font-size: 0.85rem; margin-top: 0.5rem;">Future AdSense placement</p>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>
+            <a href="#privacy">Privacy Policy</a> | 
+            <a href="#contact">Contact</a> | 
+            <a href="#about">About</a>
+        </p>
+        <p style="margin-top: 0.5rem; font-size: 0.85rem;">© 2025 Tic Tac Toe Online. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
